@@ -80,7 +80,7 @@ class App
     selected_book = @books[book_index]
     puts 'Select a person from the following list by number (not id)'
     @people.each_with_index do |person, index|
-      puts "#{index}) #{person.name}, #{person.age} years old"
+      puts "#{index}) Name: #{person.name},  ID: #{person.id}, Age: #{person.age}"
     end
     person_index = gets.chomp.to_i
     selected_person = @people[person_index]
