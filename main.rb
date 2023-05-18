@@ -54,7 +54,6 @@ def handle_list_rentals(app)
   app.list_rentals
 end
 
-
 options = {
   1 => method(:handle_list_books),
   2 => method(:handle_list_people),
@@ -63,6 +62,5 @@ options = {
   5 => method(:handle_create_rental),
   6 => method(:handle_list_rentals)
 }
-
 
 main(options)
